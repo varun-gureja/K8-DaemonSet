@@ -1,0 +1,6 @@
+A DaemonSet makes sure it creates one pod on each existing node.
+Certain cases exist when you want a pod to run on each and every node in the cluster and each node needs to run exactly one instance of the pod.
+Those cases include infrastructure-related pods that perform system-level operations.
+ For example:
+log collector and a resource monitor on every node. 
+kube-proxy process, which needs to run on all nodes to make services work.
